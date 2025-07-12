@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container" id="container">
+      <header id="header">
+        <div class="circle"></div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <nav class="navbar">
+          <div id="glass_back_menu"></div>
+          <div id="glass_back_condition"></div>
+          <i class="fa fa-bars" id="menu_bar"></i>
+          <i class="fa fa-close" id="menu_bar_close"></i>
+          <ul class="menu" id="menu_list_ul">
+            <li><a href="#container" class="menu_item_active">خانه</a></li>
+            <li><a href="#about_sec">درباره من</a></li>
+            <li><a href="#skills">مهارت ها</a></li>
+            <li><a href="#portfolio">نمونه کار</a></li>
+          </ul>
+          <button class="head_btn" id="head_btn_condition">
+            فرم تماس با ما
+          </button>
+        </nav>
+        <section class="head_content">
+          <img src="img/img.png" alt="" />
+          <div class="head_content-text">
+            <h1>صفحه شخصی طاها خیرآبادی</h1>
+            <p>
+              این سایت با هدف ایجاد ارتباط میان کارفرما <br />
+              و برنامه نویس میباشد
+            </p>
+          </div>
+        </section>
+      </header>
+      <!-- ******** main content ******** -->
+      <!--  condition form box -->
+      <div class="condition_box">
+        <section class="sotioal_condition">
+          <div>
+            <img src="img/phone.jpg" alt="" />
+            <p>09928978446</p>
+          </div>
+          <div>
+            <img src="img/email.png" alt="" id="email_icon" />
+            <p>tahakheirabadi036@gmail.com</p>
+          </div>
+          <div>
+            <img src="img/instagram.jpg" alt="" />
+            <p>techaha.ir</p>
+          </div>
+        </section>
+        <section class="user_information">
+          <input
+            type="text"
+            placeholder="شماره موبایل خود را وارد کنید"
+            id="user_phone_input"
+          />
+          <button>ثبت شماره</button>
+        </section>
+      </div>
+      <!-- for me -->
+      <section class="about_sec" id="about_sec">
+        <div class="about_sec_content">
+          <h6>
+            طاها خیرآبادی برنامه نویس فرانت اند و مهندس کامپیوتر تیم همابیت
+          </h6>
+          <p>
+            از 15 سالگی وارد حوزه برنامه نویسی شده و با زبان c# شروع به کار کردم
+            بعد از یکسال با حوزه فرانت اند اشنا شدم و تا الان در این حوزه برنامه
+            نویسی میکنم درحال حاضر دانشجو بوده و در رشته مهندسی کامپیوتر تحصیل
+            میکنم
+            <br />
+            هم اکنون 19 سال سن دارم
+            <br />
+            به صورت فریلنسری با تیم برنامه نویسی همابیت همکاری میکنم
+          </p>
+          <button onclick="open_condition_box()">همکاری</button>
+        </div>
+        <img src="img/profile.png" alt="" />
+      </section>
+      <!-- skills -->
+      <section id="skills">
+        <h2 class="skills">مهارت ها</h2>
+        <div class="skills_box">
+          <div class="skill">
+            <div class="im-content_skills">
+              <img src="img/wp.jpg" alt="" />
+              <p>وردپرس</p>
+            </div>
+            <div class="progress_bar">
+              <span></span>
+              <p></p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="im-content_skills">
+              <img src="img/js.jpg" alt="" />
+              <p>جاوااسکریپت</p>
+            </div>
+            <div class="progress_bar">
+              <span></span>
+              <p></p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="im-content_skills">
+              <img src="img/html.jpg" alt="" />
+              <p>اچ تی ام ال</p>
+            </div>
+            <div class="progress_bar">
+              <span></span>
+              <p></p>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="im-content_skills">
+              <img src="img/css.jpg" alt="" />
+              <p>سی اس اس</p>
+            </div>
+            <div class="progress_bar">
+              <span></span>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- example of work -->
+      <section id="portfolio">
+        <div class="portfolio_item">
+          <img src="img/portfolio-1.jpg" alt="" />
+          <button>مشاهده <i class="fa fa-chevron-left"></i></button>
+        </div>
+        <div class="portfolio_item">
+          <img src="img/portfolio-1.jpg" alt="" />
+          <button>مشاهده <i class="fa fa-chevron-left"></i></button>
+        </div>
+        <div class="portfolio_item">
+          <img src="img/portfolio-1.jpg" alt="" />
+          <button>مشاهده <i class="fa fa-chevron-left"></i></button>
+        </div>
+      </section>
+      <footer>
+        <div>
+          <button id="footer_btn"><i class="fa fa-chevron-up"></i></button>
+          <h2>طاها خیرآبادی</h2>
+        </div>
+        <div>
+          <p>
+            <i class="fa fa-location-dot"></i> استان مرکزی،اراک،بخش
+            معصومیه،روستای خیرآباد
+          </p>
+          <p><i class="fa fa-phone"></i> +98-9928978446</p>
+        </div>
+        <div>ساخته شده با <i class="fa fa-heart"></i></div>
+      </footer>
+    </section>
+
+    <script>
+      let skillOfPercent = [80, 75, 90, 95];
+      let progress_barSpans = document.querySelectorAll(".progress_bar span");
+      let progress_barLabel = document.querySelectorAll(".progress_bar p");
+      console.log(progress_barSpans);
+
+      for (let index = 0; index < progress_barSpans.length; index++) {
+        progress_barSpans[index].style.width = skillOfPercent[index] + "%";
+        progress_barLabel[index].innerHTML = skillOfPercent[index] + "%";
+      }
+
+      window.addEventListener("load", function () {
+        let circle1 = document.querySelector(".circle");
+        let circle2 = document.querySelector(".circle1");
+        let circle3 = document.querySelector(".circle2");
+        let head_image = document.querySelector(".head_content img");
+        circle1.style.top = "-18rem";
+        circle2.style.right = "-2.5rem";
+        circle3.style.top = "20rem";
+        head_image.style.opacity = "1";
+        head_image.style.transform = "translateY(0)";
+      });
+
+      let menu_bar = document.getElementById("menu_bar");
+      let menu_bar_close = document.getElementById("menu_bar_close");
+      let menu_list_ul = document.getElementById("menu_list_ul");
+      let glass_back_menu = document.getElementById("glass_back_menu");
+
+      menu_bar.addEventListener("click", function () {
+        menu_list_ul.style.right = "0";
+        menu_bar_close.style.left = "2rem";
+        glass_back_menu.style.right = "0";
+        glass_back_menu.style.opacity = "1";
+      });
+
+      menu_bar_close.addEventListener("click", close_menu_list);
+      function close_menu_list() {
+        menu_list_ul.style.right = "-50%";
+        menu_bar_close.style.left = "-4rem";
+        glass_back_menu.style.opacity = "0";
+        // close_popup_box();
+        glass_back_menu.style.right = "-100%";
+      }
+      glass_back_menu.addEventListener("click", close_menu_list);
+      window.addEventListener("resize", close_menu_list);
+      // pop up box condition
+      let head_btn_condition = document.getElementById("head_btn_condition");
+      let condition_box = document.querySelector(".condition_box");
+      head_btn_condition.addEventListener("click", open_condition_box);
+      function open_condition_box() {
+        condition_box.style.display = "flex";
+        glass_back_condition.style.display = "block";
+        document.body.style.overflow = "hidden";
+      }
+      let glass_back_condition = document.getElementById(
+        "glass_back_condition"
+      );
+      glass_back_condition.addEventListener("click", close_popup_box);
+      function close_popup_box() {
+        condition_box.style.display = "none";
+        glass_back_condition.style.display = "none";
+        // موقع بستن:
+        document.body.style.overflow = "auto";
+      }
+      // scrolling menu and fix menu top
+      let navbar = document.querySelector(".navbar");
+      window.addEventListener("scroll", function () {
+        if (window.scrollY >= 80) {
+          navbar.classList.add("navbar_fix");
+        } else {
+          navbar.classList.remove("navbar_fix");
+        }
+      });
+
+      let user_phone_input = document.getElementById("user_phone_input");
+      var input_value;
+      let phoneRegex = /^09\d{9}$/;
+      user_phone_input.addEventListener("input", function (event) {
+        if (!phoneRegex.test(event.target.value)) {
+          user_phone_input.style.borderColor = "red";
+        } else {
+          user_phone_input.style.borderColor = "rgb(73, 73, 73)";
+        }
+      });
+
+      const navLinks = document.querySelectorAll("#menu_list_ul a");
+      const sections = document.querySelectorAll("section");
+      console.log(sections);
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          console.log(sectionTop, window.scrollY);
+
+          if (window.scrollY >= sectionTop && window.scrollY >= 480) {
+            current = section.getAttribute("id");
+            // alert("hi");
+          }
+          // console.log(current);
+
+          if (window.scrollY <= 480) {
+            // console.log("hi");
+            navLinks[0].classList.add("menu_item_active");
+          } else {
+            navLinks[0].classList.remove("menu_item_active");
+          }
+        });
+        // navLinks.forEach((link) => {
+        //   link.classList.remove("menu_item_active");
+        //   if (link.getAttribute("href").includes(current) && current !== "") {
+        //     link.classList.add("menu_item_active");
+        //   }
+        // });
+        for (let index = 1; index < navLinks.length; index++) {
+          navLinks[index].classList.remove("menu_item_active");
+          if (
+            navLinks[index].getAttribute("href").includes(current) &&
+            current !== ""
+          ) {
+            navLinks[index].classList.add("menu_item_active");
+          }
+        }
+      });
+      const footer_btn = document.getElementById("footer_btn");
+      footer_btn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>
